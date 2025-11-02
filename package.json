@@ -1,12 +1,11 @@
 {
-	"name": "mod-checker-cdn",
+	"name": "api-template",
 	"version": "1.0.0",
 	"type": "commonjs",
 	"main": "src/app.ts",
 	"scripts": {
-		"start": "pm2 start src/app.ts --interpreter ts-node",
+		"start": "pm2 start \"ts-node src/app.ts\" --name api-template",
 		"dev": "ts-node-dev src/app.ts",
-		"lint": "eslint .",
 		"test": "vitest",
 		"format": "prettier --write ."
 	},
