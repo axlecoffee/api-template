@@ -1,0 +1,33 @@
+{
+	"name": "mod-checker-cdn",
+	"version": "1.0.0",
+	"type": "commonjs",
+	"main": "src/app.ts",
+	"scripts": {
+		"start": "pm2 start src/app.ts --interpreter ts-node",
+		"dev": "ts-node-dev src/app.ts",
+		"lint": "eslint .",
+		"test": "vitest",
+		"format": "prettier --write ."
+	},
+	"packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef",
+	"dependencies": {
+		"express": "^5.1.0",
+		"mongoose": "^8.18.1",
+		"multer": "^2.0.2"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.3",
+		"@types/jest": "^30.0.0",
+		"@types/multer": "^2.0.0",
+		"@types/supertest": "^6.0.3",
+		"eslint": "^9.36.0",
+		"prettier": "^3.6.2",
+		"supertest": "^7.1.4",
+		"ts-jest": "^29.4.4",
+		"ts-node": "^10.9.2",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.9.2",
+		"vitest": "^3.2.4"
+	}
+}
