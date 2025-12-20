@@ -1,7 +1,7 @@
 services:
-  api:
-    container_name: api-template
-    build: .
-    env_file: .env
-    ports:
-      - "${PORT:-3000}:${PORT:-3000}"
+    api:
+        container_name: api-template
+        build: .
+        env_file: .env
+        ports:
+            - '${PORT:-3000}:${PORT:-3000}'

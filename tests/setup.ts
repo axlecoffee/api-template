@@ -9,13 +9,13 @@ let server: any;
  * Setup before all tests.
  */
 beforeAll(() => {
-  server = createServer(app);
-  server.listen(3001);
+	server = createServer(app);
+	server.listen(3001);
 });
 
 /**
  * Cleanup after all tests.
  */
 afterAll(() => {
-  server.close();
+	server.close();
 });

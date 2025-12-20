@@ -34,7 +34,6 @@ hi team I made this quickly so I can spin up shitty API's faster than before. Th
 cp .env.example .env
 ```
 
-
 ### Running the Application
 
 #### Development
