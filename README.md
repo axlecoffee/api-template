@@ -28,13 +28,12 @@ hi team I made this quickly so I can spin up shitty API's faster than before. Th
     pnpm install
     ```
 
-3. Create the `config.json` file in root:
+3. Create the `.env` file in root:
 
-    ```json
-    {
-    	"databaseUri": "mongodb://user:password@url"
-    }
-    ```
+```sh
+cp .env.example .env
+```
+
 
 ### Running the Application
 

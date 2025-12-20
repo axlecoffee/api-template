@@ -4,7 +4,7 @@ import config from './config';
 import exampleRoutes from './routes/exampleRoutes';
 
 const app: Express = express();
-const PORT = process.env.PORT || 6657;
+const PORT = config.port || 3000;
 
 /**
  * Connect to the database.

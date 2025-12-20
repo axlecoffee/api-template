@@ -1,10 +1,10 @@
-import path from 'path';
-import conf from '../config.json';
+import 'dotenv/config';
 
 const config = {
 	db: {
-		uri: conf.databaseUri,
+		uri: process.env.MONGODB_URI || '',
 	},
+	port: process.env.PORT || 6657,
 };
 
 export default config;
