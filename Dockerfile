@@ -5,7 +5,10 @@ RUN corepack enable
 
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+# claudeslop
+RUN echo -e "allowBuilds:\n  esbuild: true" > pnpm-workspace.yaml
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --ignore-scripts=false
+
 COPY . .
 
 USER node
